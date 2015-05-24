@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,11 +22,10 @@ package com.vmware.vim25;
 
 public class VirtualPCIPassthroughVmiopBackingOption extends VirtualPCIPassthroughPluginBackingOption {
     public StringOption vgpu;
-
     public int maxInstances;
 
     public StringOption getVgpu() {
-        return vgpu;
+        return this.vgpu;
     }
 
     public void setVgpu(StringOption vgpu) {
@@ -34,7 +33,7 @@ public class VirtualPCIPassthroughVmiopBackingOption extends VirtualPCIPassthrou
     }
 
     public int getMaxInstances() {
-        return maxInstances;
+        return this.maxInstances;
     }
 
     public void setMaxInstances(int maxInstances) {

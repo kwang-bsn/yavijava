@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class VASAStorageArray extends DynamicData {
     public String name;
-
     public String uuid;
-
     public String vendorId;
-
     public String modelId;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -38,7 +35,7 @@ public class VASAStorageArray extends DynamicData {
     }
 
     public String getUuid() {
-        return uuid;
+        return this.uuid;
     }
 
     public void setUuid(String uuid) {
@@ -46,7 +43,7 @@ public class VASAStorageArray extends DynamicData {
     }
 
     public String getVendorId() {
-        return vendorId;
+        return this.vendorId;
     }
 
     public void setVendorId(String vendorId) {
@@ -54,7 +51,7 @@ public class VASAStorageArray extends DynamicData {
     }
 
     public String getModelId() {
-        return modelId;
+        return this.modelId;
     }
 
     public void setModelId(String modelId) {

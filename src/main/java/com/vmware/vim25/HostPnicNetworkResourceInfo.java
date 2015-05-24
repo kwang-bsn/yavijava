@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class HostPnicNetworkResourceInfo extends DynamicData {
     public String pnicDevice;
-
     public long availableBandwidthForVMTraffic;
-
     public long unusedBandwidthForVMTraffic;
-
     public HostPlacedVirtualNicIdentifier[] placedVirtualNics;
 
     public String getPnicDevice() {
-        return pnicDevice;
+        return this.pnicDevice;
     }
 
     public void setPnicDevice(String pnicDevice) {
@@ -38,7 +35,7 @@ public class HostPnicNetworkResourceInfo extends DynamicData {
     }
 
     public long getAvailableBandwidthForVMTraffic() {
-        return availableBandwidthForVMTraffic;
+        return this.availableBandwidthForVMTraffic;
     }
 
     public void setAvailableBandwidthForVMTraffic(long availableBandwidthForVMTraffic) {
@@ -46,7 +43,7 @@ public class HostPnicNetworkResourceInfo extends DynamicData {
     }
 
     public long getUnusedBandwidthForVMTraffic() {
-        return unusedBandwidthForVMTraffic;
+        return this.unusedBandwidthForVMTraffic;
     }
 
     public void setUnusedBandwidthForVMTraffic(long unusedBandwidthForVMTraffic) {
@@ -54,7 +51,7 @@ public class HostPnicNetworkResourceInfo extends DynamicData {
     }
 
     public HostPlacedVirtualNicIdentifier[] getPlacedVirtualNics() {
-        return placedVirtualNics;
+        return this.placedVirtualNics;
     }
 
     public void setPlacedVirtualNics(HostPlacedVirtualNicIdentifier[] placedVirtualNics) {

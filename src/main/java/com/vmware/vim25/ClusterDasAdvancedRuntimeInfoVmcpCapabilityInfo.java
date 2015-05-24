@@ -26,7 +26,7 @@ public class ClusterDasAdvancedRuntimeInfoVmcpCapabilityInfo extends DynamicData
     public boolean storagePDLSupported;
 
     public boolean getStorageAPDSupported() {
-        return storageAPDSupported;
+        return this.storageAPDSupported;
     }
 
     public void setStorageAPDSupported(boolean storageAPDSupported) {
@@ -34,7 +34,7 @@ public class ClusterDasAdvancedRuntimeInfoVmcpCapabilityInfo extends DynamicData
     }
 
     public boolean getStoragePDLSupported() {
-        return storagePDLSupported;
+        return this.storagePDLSupported;
     }
 
     public void setStoragePDLSupported(boolean storagePDLSupported) {

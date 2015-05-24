@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class HostPlacedVirtualNicIdentifier extends DynamicData {
     public ManagedObjectReference vm;
-
     public String vnicKey;
-
-    public int reservation;
+    public Integer reservation;
 
     public ManagedObjectReference getVm() {
-        return vm;
+        return this.vm;
     }
 
     public void setVm(ManagedObjectReference vm) {
@@ -36,18 +34,18 @@ public class HostPlacedVirtualNicIdentifier extends DynamicData {
     }
 
     public String getVnicKey() {
-        return vnicKey;
+        return this.vnicKey;
     }
 
     public void setVnicKey(String vnicKey) {
         this.vnicKey = vnicKey;
     }
 
-    public int getReservation() {
-        return reservation;
+    public Integer getReservation() {
+        return this.reservation;
     }
 
-    public void setReservation(int reservation) {
+    public void setReservation(Integer reservation) {
         this.reservation = reservation;
     }
 

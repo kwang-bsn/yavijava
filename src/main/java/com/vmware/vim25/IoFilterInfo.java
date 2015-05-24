@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,19 +22,14 @@ package com.vmware.vim25;
 
 public class IoFilterInfo extends DynamicData {
     public String id;
-
     public String name;
-
     public String vendor;
-
     public String version;
-
     public String summary;
-
     public String releaseDate;
 
     public String getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(String id) {
@@ -42,7 +37,7 @@ public class IoFilterInfo extends DynamicData {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -50,7 +45,7 @@ public class IoFilterInfo extends DynamicData {
     }
 
     public String getVendor() {
-        return vendor;
+        return this.vendor;
     }
 
     public void setVendor(String vendor) {
@@ -58,7 +53,7 @@ public class IoFilterInfo extends DynamicData {
     }
 
     public String getVersion() {
-        return version;
+        return this.version;
     }
 
     public void setVersion(String version) {
@@ -66,7 +61,7 @@ public class IoFilterInfo extends DynamicData {
     }
 
     public String getSummary() {
-        return summary;
+        return this.summary;
     }
 
     public void setSummary(String summary) {
@@ -74,7 +69,7 @@ public class IoFilterInfo extends DynamicData {
     }
 
     public String getReleaseDate() {
-        return releaseDate;
+        return this.releaseDate;
     }
 
     public void setReleaseDate(String releaseDate) {

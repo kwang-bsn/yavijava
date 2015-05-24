@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,21 +22,15 @@ package com.vmware.vim25;
 
 public class PlacementRankResult extends DynamicData {
     public String key;
-
     public ManagedObjectReference candidate;
-
     public long reservedSpaceMB;
-
     public long usedSpaceMB;
-
     public long totalSpaceMB;
-
     public double utilization;
-
     public LocalizedMethodFault[] faults;
 
     public String getKey() {
-        return key;
+        return this.key;
     }
 
     public void setKey(String key) {
@@ -44,7 +38,7 @@ public class PlacementRankResult extends DynamicData {
     }
 
     public ManagedObjectReference getCandidate() {
-        return candidate;
+        return this.candidate;
     }
 
     public void setCandidate(ManagedObjectReference candidate) {
@@ -52,7 +46,7 @@ public class PlacementRankResult extends DynamicData {
     }
 
     public long getReservedSpaceMB() {
-        return reservedSpaceMB;
+        return this.reservedSpaceMB;
     }
 
     public void setReservedSpaceMB(long reservedSpaceMB) {
@@ -60,7 +54,7 @@ public class PlacementRankResult extends DynamicData {
     }
 
     public long getUsedSpaceMB() {
-        return usedSpaceMB;
+        return this.usedSpaceMB;
     }
 
     public void setUsedSpaceMB(long usedSpaceMB) {
@@ -68,7 +62,7 @@ public class PlacementRankResult extends DynamicData {
     }
 
     public long getTotalSpaceMB() {
-        return totalSpaceMB;
+        return this.totalSpaceMB;
     }
 
     public void setTotalSpaceMB(long totalSpaceMB) {
@@ -76,7 +70,7 @@ public class PlacementRankResult extends DynamicData {
     }
 
     public double getUtilization() {
-        return utilization;
+        return this.utilization;
     }
 
     public void setUtilization(double utilization) {
@@ -84,7 +78,7 @@ public class PlacementRankResult extends DynamicData {
     }
 
     public LocalizedMethodFault[] getFaults() {
-        return faults;
+        return this.faults;
     }
 
     public void setFaults(LocalizedMethodFault[] faults) {

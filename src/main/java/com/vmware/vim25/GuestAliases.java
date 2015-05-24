@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +16,28 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class GuestAliases extends DynamicData {
 
-    public GuestAuthAliasInfo[] aliases;
+public class GuestAliases extends DynamicData {
     public String base64Cert;
+    public GuestAuthAliasInfo[] aliases;
+
+    public String getBase64Cert() {
+        return this.base64Cert;
+    }
+
+    public void setBase64Cert(String base64Cert) {
+        this.base64Cert = base64Cert;
+    }
 
     public GuestAuthAliasInfo[] getAliases() {
-        return aliases;
+        return this.aliases;
     }
 
     public void setAliases(GuestAuthAliasInfo[] aliases) {
         this.aliases = aliases;
     }
 
-    public String getBase64Cert() {
-        return base64Cert;
-    }
-
-    public void setBase64Cert(String base64Cert) {
-        this.base64Cert = base64Cert;
-    }
 }

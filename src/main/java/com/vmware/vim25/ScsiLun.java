@@ -1,40 +1,25 @@
-/*================================================================================
-Copyright (c) 2013 Steve Jin. All Rights Reserved.
-
-Redistribution and use in source and binary forms, with or without modification, 
-are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, 
-this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice, 
-this list of conditions and the following disclaimer in the documentation 
-and/or other materials provided with the distribution.
-
-* Neither the name of VMware, Inc. nor the names of its contributors may be used
-to endorse or promote products derived from this software without specific prior 
-written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
-IN NO EVENT SHALL VMWARE, INC. OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGE.
-================================================================================*/
-
 package com.vmware.vim25;
 
 /**
- * @author Steve Jin (http://www.doublecloud.org)
- * @version 5.1
+ * Created by Michael Rice on Sun May 24 07:03:52 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @since 6.0
  */
 
-@SuppressWarnings("all")
 public class ScsiLun extends HostDevice {
     public String key;
     public String uuid;
@@ -54,148 +39,158 @@ public class ScsiLun extends HostDevice {
     public String[] operationalState;
     public ScsiLunCapabilities capabilities;
     public String vStorageSupport;
+    public Boolean protocolEndpoint;
 
     public String getKey() {
         return this.key;
-    }
-
-    public String getUuid() {
-        return this.uuid;
-    }
-
-    public ScsiLunDescriptor[] getDescriptor() {
-        return this.descriptor;
-    }
-
-    public String getCanonicalName() {
-        return this.canonicalName;
-    }
-
-    public String getDisplayName() {
-        return this.displayName;
-    }
-
-    public String getLunType() {
-        return this.lunType;
-    }
-
-    public String getVendor() {
-        return this.vendor;
-    }
-
-    public String getModel() {
-        return this.model;
-    }
-
-    public String getRevision() {
-        return this.revision;
-    }
-
-    public Integer getScsiLevel() {
-        return this.scsiLevel;
-    }
-
-    public String getSerialNumber() {
-        return this.serialNumber;
-    }
-
-    public ScsiLunDurableName getDurableName() {
-        return this.durableName;
-    }
-
-    public ScsiLunDurableName[] getAlternateName() {
-        return this.alternateName;
-    }
-
-    public byte[] getStandardInquiry() {
-        return this.standardInquiry;
-    }
-
-    public Integer getQueueDepth() {
-        return this.queueDepth;
-    }
-
-    public String[] getOperationalState() {
-        return this.operationalState;
-    }
-
-    public ScsiLunCapabilities getCapabilities() {
-        return this.capabilities;
-    }
-
-    public String getVStorageSupport() {
-        return this.vStorageSupport;
     }
 
     public void setKey(String key) {
         this.key = key;
     }
 
+    public String getUuid() {
+        return this.uuid;
+    }
+
     public void setUuid(String uuid) {
         this.uuid = uuid;
+    }
+
+    public ScsiLunDescriptor[] getDescriptor() {
+        return this.descriptor;
     }
 
     public void setDescriptor(ScsiLunDescriptor[] descriptor) {
         this.descriptor = descriptor;
     }
 
+    public String getCanonicalName() {
+        return this.canonicalName;
+    }
+
     public void setCanonicalName(String canonicalName) {
         this.canonicalName = canonicalName;
+    }
+
+    public String getDisplayName() {
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
     }
 
+    public String getLunType() {
+        return this.lunType;
+    }
+
     public void setLunType(String lunType) {
         this.lunType = lunType;
+    }
+
+    public String getVendor() {
+        return this.vendor;
     }
 
     public void setVendor(String vendor) {
         this.vendor = vendor;
     }
 
+    public String getModel() {
+        return this.model;
+    }
+
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public String getRevision() {
+        return this.revision;
     }
 
     public void setRevision(String revision) {
         this.revision = revision;
     }
 
+    public Integer getScsiLevel() {
+        return this.scsiLevel;
+    }
+
     public void setScsiLevel(Integer scsiLevel) {
         this.scsiLevel = scsiLevel;
+    }
+
+    public String getSerialNumber() {
+        return this.serialNumber;
     }
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
+    public ScsiLunDurableName getDurableName() {
+        return this.durableName;
+    }
+
     public void setDurableName(ScsiLunDurableName durableName) {
         this.durableName = durableName;
+    }
+
+    public ScsiLunDurableName[] getAlternateName() {
+        return this.alternateName;
     }
 
     public void setAlternateName(ScsiLunDurableName[] alternateName) {
         this.alternateName = alternateName;
     }
 
+    public byte[] getStandardInquiry() {
+        return this.standardInquiry;
+    }
+
     public void setStandardInquiry(byte[] standardInquiry) {
         this.standardInquiry = standardInquiry;
+    }
+
+    public Integer getQueueDepth() {
+        return this.queueDepth;
     }
 
     public void setQueueDepth(Integer queueDepth) {
         this.queueDepth = queueDepth;
     }
 
+    public String[] getOperationalState() {
+        return this.operationalState;
+    }
+
     public void setOperationalState(String[] operationalState) {
         this.operationalState = operationalState;
+    }
+
+    public ScsiLunCapabilities getCapabilities() {
+        return this.capabilities;
     }
 
     public void setCapabilities(ScsiLunCapabilities capabilities) {
         this.capabilities = capabilities;
     }
 
+    public String getVStorageSupport() {
+        return this.vStorageSupport;
+    }
+
     public void setVStorageSupport(String vStorageSupport) {
         this.vStorageSupport = vStorageSupport;
     }
+
+    public Boolean getProtocolEndpoint() {
+        return this.protocolEndpoint;
+    }
+
+    public void setProtocolEndpoint(Boolean protocolEndpoint) {
+        this.protocolEndpoint = protocolEndpoint;
+    }
+
 }

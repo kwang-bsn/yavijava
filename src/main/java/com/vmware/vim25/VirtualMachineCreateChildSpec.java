@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class VirtualMachineCreateChildSpec extends DynamicData {
     public VirtualMachineRelocateSpec location;
-
     public boolean persistent;
-
     public OptionValue[] configParams;
 
     public VirtualMachineRelocateSpec getLocation() {
-        return location;
+        return this.location;
     }
 
     public void setLocation(VirtualMachineRelocateSpec location) {
@@ -36,7 +34,7 @@ public class VirtualMachineCreateChildSpec extends DynamicData {
     }
 
     public boolean getPersistent() {
-        return persistent;
+        return this.persistent;
     }
 
     public void setPersistent(boolean persistent) {
@@ -44,7 +42,7 @@ public class VirtualMachineCreateChildSpec extends DynamicData {
     }
 
     public OptionValue[] getConfigParams() {
-        return configParams;
+        return this.configParams;
     }
 
     public void setConfigParams(OptionValue[] configParams) {

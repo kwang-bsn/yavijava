@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class DvsHostInfrastructureTrafficResourceAllocation extends DynamicData {
     public long limit;
-
     public SharesInfo shares;
-
     public long reservation;
 
     public long getLimit() {
-        return limit;
+        return this.limit;
     }
 
     public void setLimit(long limit) {
@@ -36,7 +34,7 @@ public class DvsHostInfrastructureTrafficResourceAllocation extends DynamicData 
     }
 
     public SharesInfo getShares() {
-        return shares;
+        return this.shares;
     }
 
     public void setShares(SharesInfo shares) {
@@ -44,7 +42,7 @@ public class DvsHostInfrastructureTrafficResourceAllocation extends DynamicData 
     }
 
     public long getReservation() {
-        return reservation;
+        return this.reservation;
     }
 
     public void setReservation(long reservation) {

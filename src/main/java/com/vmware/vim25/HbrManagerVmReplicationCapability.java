@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,19 +22,14 @@ package com.vmware.vim25;
 
 public class HbrManagerVmReplicationCapability extends DynamicData {
     public ManagedObjectReference vm;
-
     public String supportedQuiesceMode;
-
     public boolean compressionSupported;
-
     public long maxSupportedSourceDiskCapacity;
-
     public long minRpo;
-
     public LocalizedMethodFault fault;
 
     public ManagedObjectReference getVm() {
-        return vm;
+        return this.vm;
     }
 
     public void setVm(ManagedObjectReference vm) {
@@ -42,7 +37,7 @@ public class HbrManagerVmReplicationCapability extends DynamicData {
     }
 
     public String getSupportedQuiesceMode() {
-        return supportedQuiesceMode;
+        return this.supportedQuiesceMode;
     }
 
     public void setSupportedQuiesceMode(String supportedQuiesceMode) {
@@ -50,7 +45,7 @@ public class HbrManagerVmReplicationCapability extends DynamicData {
     }
 
     public boolean getCompressionSupported() {
-        return compressionSupported;
+        return this.compressionSupported;
     }
 
     public void setCompressionSupported(boolean compressionSupported) {
@@ -58,7 +53,7 @@ public class HbrManagerVmReplicationCapability extends DynamicData {
     }
 
     public long getMaxSupportedSourceDiskCapacity() {
-        return maxSupportedSourceDiskCapacity;
+        return this.maxSupportedSourceDiskCapacity;
     }
 
     public void setMaxSupportedSourceDiskCapacity(long maxSupportedSourceDiskCapacity) {
@@ -66,7 +61,7 @@ public class HbrManagerVmReplicationCapability extends DynamicData {
     }
 
     public long getMinRpo() {
-        return minRpo;
+        return this.minRpo;
     }
 
     public void setMinRpo(long minRpo) {
@@ -74,7 +69,7 @@ public class HbrManagerVmReplicationCapability extends DynamicData {
     }
 
     public LocalizedMethodFault getFault() {
-        return fault;
+        return this.fault;
     }
 
     public void setFault(LocalizedMethodFault fault) {

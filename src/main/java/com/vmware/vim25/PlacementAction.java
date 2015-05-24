@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class PlacementAction extends ClusterAction {
     public ManagedObjectReference vm;
-
     public ManagedObjectReference targetHost;
-
     public VirtualMachineRelocateSpec relocateSpec;
 
     public ManagedObjectReference getVm() {
-        return vm;
+        return this.vm;
     }
 
     public void setVm(ManagedObjectReference vm) {
@@ -36,7 +34,7 @@ public class PlacementAction extends ClusterAction {
     }
 
     public ManagedObjectReference getTargetHost() {
-        return targetHost;
+        return this.targetHost;
     }
 
     public void setTargetHost(ManagedObjectReference targetHost) {
@@ -44,7 +42,7 @@ public class PlacementAction extends ClusterAction {
     }
 
     public VirtualMachineRelocateSpec getRelocateSpec() {
-        return relocateSpec;
+        return this.relocateSpec;
     }
 
     public void setRelocateSpec(VirtualMachineRelocateSpec relocateSpec) {

@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class ServiceLocator extends DynamicData {
     public String instanceUuid;
-
     public String url;
-
     public ServiceLocatorCredential credential;
-
     public String sslThumbprint;
 
     public String getInstanceUuid() {
-        return instanceUuid;
+        return this.instanceUuid;
     }
 
     public void setInstanceUuid(String instanceUuid) {
@@ -38,7 +35,7 @@ public class ServiceLocator extends DynamicData {
     }
 
     public String getUrl() {
-        return url;
+        return this.url;
     }
 
     public void setUrl(String url) {
@@ -46,7 +43,7 @@ public class ServiceLocator extends DynamicData {
     }
 
     public ServiceLocatorCredential getCredential() {
-        return credential;
+        return this.credential;
     }
 
     public void setCredential(ServiceLocatorCredential credential) {
@@ -54,7 +51,7 @@ public class ServiceLocator extends DynamicData {
     }
 
     public String getSslThumbprint() {
-        return sslThumbprint;
+        return this.sslThumbprint;
     }
 
     public void setSslThumbprint(String sslThumbprint) {

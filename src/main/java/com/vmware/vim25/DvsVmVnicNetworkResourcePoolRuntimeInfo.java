@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,21 +22,15 @@ package com.vmware.vim25;
 
 public class DvsVmVnicNetworkResourcePoolRuntimeInfo extends DynamicData {
     public String key;
-
     public String name;
-
-    public int capacity;
-
-    public int usage;
-
-    public int available;
-
+    public Integer capacity;
+    public Integer usage;
+    public Integer available;
     public String status;
-
     public DvsVnicAllocatedResource[] allocatedResource;
 
     public String getKey() {
-        return key;
+        return this.key;
     }
 
     public void setKey(String key) {
@@ -44,39 +38,39 @@ public class DvsVmVnicNetworkResourcePoolRuntimeInfo extends DynamicData {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public Integer getCapacity() {
+        return this.capacity;
     }
 
-    public void setCapacity(int capacity) {
+    public void setCapacity(Integer capacity) {
         this.capacity = capacity;
     }
 
-    public int getUsage() {
-        return usage;
+    public Integer getUsage() {
+        return this.usage;
     }
 
-    public void setUsage(int usage) {
+    public void setUsage(Integer usage) {
         this.usage = usage;
     }
 
-    public int getAvailable() {
-        return available;
+    public Integer getAvailable() {
+        return this.available;
     }
 
-    public void setAvailable(int available) {
+    public void setAvailable(Integer available) {
         this.available = available;
     }
 
     public String getStatus() {
-        return status;
+        return this.status;
     }
 
     public void setStatus(String status) {
@@ -84,7 +78,7 @@ public class DvsVmVnicNetworkResourcePoolRuntimeInfo extends DynamicData {
     }
 
     public DvsVnicAllocatedResource[] getAllocatedResource() {
-        return allocatedResource;
+        return this.allocatedResource;
     }
 
     public void setAllocatedResource(DvsVnicAllocatedResource[] allocatedResource) {

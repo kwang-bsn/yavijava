@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,52 +16,55 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class VirtualResourcePoolUsage extends DynamicData {
 
-    public long cpuReservationMhz;
-    public long cpuReservationUsedMhz;
-    public long memReservationMB;
-    public long memReservationUsedMB;
+public class VirtualResourcePoolUsage extends DynamicData {
     public String vrpId;
+    public long cpuReservationMhz;
+    public long memReservationMB;
+    public long cpuReservationUsedMhz;
+    public long memReservationUsedMB;
+
+    public String getVrpId() {
+        return this.vrpId;
+    }
+
+    public void setVrpId(String vrpId) {
+        this.vrpId = vrpId;
+    }
 
     public long getCpuReservationMhz() {
-        return cpuReservationMhz;
+        return this.cpuReservationMhz;
     }
 
     public void setCpuReservationMhz(long cpuReservationMhz) {
         this.cpuReservationMhz = cpuReservationMhz;
     }
 
-    public long getCpuReservationUsedMhz() {
-        return cpuReservationUsedMhz;
-    }
-
-    public void setCpuReservationUsedMhz(long cpuReservationUsedMhz) {
-        this.cpuReservationUsedMhz = cpuReservationUsedMhz;
-    }
-
     public long getMemReservationMB() {
-        return memReservationMB;
+        return this.memReservationMB;
     }
 
     public void setMemReservationMB(long memReservationMB) {
         this.memReservationMB = memReservationMB;
     }
 
+    public long getCpuReservationUsedMhz() {
+        return this.cpuReservationUsedMhz;
+    }
+
+    public void setCpuReservationUsedMhz(long cpuReservationUsedMhz) {
+        this.cpuReservationUsedMhz = cpuReservationUsedMhz;
+    }
+
     public long getMemReservationUsedMB() {
-        return memReservationUsedMB;
+        return this.memReservationUsedMB;
     }
 
     public void setMemReservationUsedMB(long memReservationUsedMB) {
         this.memReservationUsedMB = memReservationUsedMB;
     }
 
-    public String getVrpId() {
-        return vrpId;
-    }
-
-    public void setVrpId(String vrpId) {
-        this.vrpId = vrpId;
-    }
 }

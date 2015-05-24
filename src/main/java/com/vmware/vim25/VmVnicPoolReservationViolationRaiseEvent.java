@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,11 +22,10 @@ package com.vmware.vim25;
 
 public class VmVnicPoolReservationViolationRaiseEvent extends DvsEvent {
     public String vmVnicResourcePoolKey;
-
     public String vmVnicResourcePoolName;
 
     public String getVmVnicResourcePoolKey() {
-        return vmVnicResourcePoolKey;
+        return this.vmVnicResourcePoolKey;
     }
 
     public void setVmVnicResourcePoolKey(String vmVnicResourcePoolKey) {
@@ -34,7 +33,7 @@ public class VmVnicPoolReservationViolationRaiseEvent extends DvsEvent {
     }
 
     public String getVmVnicResourcePoolName() {
-        return vmVnicResourcePoolName;
+        return this.vmVnicResourcePoolName;
     }
 
     public void setVmVnicResourcePoolName(String vmVnicResourcePoolName) {

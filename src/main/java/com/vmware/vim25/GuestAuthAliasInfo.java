@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,32 +16,28 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class GuestAuthAliasInfo extends DynamicData {
 
-    /**
-     * User-supplied data to describe the subject.
-     */
+public class GuestAuthAliasInfo extends DynamicData {
+    public GuestAuthSubject subject;
     public String comment;
 
-    /**
-     * The subject.
-     */
-    public GuestAuthSubject guestAuthSubject;
+    public GuestAuthSubject getSubject() {
+        return this.subject;
+    }
+
+    public void setSubject(GuestAuthSubject subject) {
+        this.subject = subject;
+    }
 
     public String getComment() {
-        return comment;
+        return this.comment;
     }
 
     public void setComment(String comment) {
         this.comment = comment;
     }
 
-    public GuestAuthSubject getGuestAuthSubject() {
-        return guestAuthSubject;
-    }
-
-    public void setGuestAuthSubject(GuestAuthSubject guestAuthSubject) {
-        this.guestAuthSubject = guestAuthSubject;
-    }
 }

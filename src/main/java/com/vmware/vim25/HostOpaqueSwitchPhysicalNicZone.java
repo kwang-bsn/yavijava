@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,11 +22,10 @@ package com.vmware.vim25;
 
 public class HostOpaqueSwitchPhysicalNicZone extends DynamicData {
     public String key;
-
     public String[] pnicDevice;
 
     public String getKey() {
-        return key;
+        return this.key;
     }
 
     public void setKey(String key) {
@@ -34,7 +33,7 @@ public class HostOpaqueSwitchPhysicalNicZone extends DynamicData {
     }
 
     public String[] getPnicDevice() {
-        return pnicDevice;
+        return this.pnicDevice;
     }
 
     public void setPnicDevice(String[] pnicDevice) {

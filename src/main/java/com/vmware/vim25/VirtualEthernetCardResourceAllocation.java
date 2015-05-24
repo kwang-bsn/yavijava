@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class VirtualEthernetCardResourceAllocation extends DynamicData {
     public long reservation;
-
     public SharesInfo share;
-
     public long limit;
 
     public long getReservation() {
-        return reservation;
+        return this.reservation;
     }
 
     public void setReservation(long reservation) {
@@ -36,7 +34,7 @@ public class VirtualEthernetCardResourceAllocation extends DynamicData {
     }
 
     public SharesInfo getShare() {
-        return share;
+        return this.share;
     }
 
     public void setShare(SharesInfo share) {
@@ -44,7 +42,7 @@ public class VirtualEthernetCardResourceAllocation extends DynamicData {
     }
 
     public long getLimit() {
-        return limit;
+        return this.limit;
     }
 
     public void setLimit(long limit) {

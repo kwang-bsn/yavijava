@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +16,35 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class VsanUpgradeSystemUpgradeStatus extends DynamicData {
 
+public class VsanUpgradeSystemUpgradeStatus extends DynamicData {
+    public boolean inProgress;
+    public VsanUpgradeSystemUpgradeHistoryItem[] history;
     public Boolean aborted;
     public Boolean completed;
-    public VsanUpgradeSystemUpgradeHistoryItem[] history;
-    public Boolean inProgress;
-    public int progress;
+    public Integer progress;
+
+    public boolean getInProgress() {
+        return this.inProgress;
+    }
+
+    public void setInProgress(boolean inProgress) {
+        this.inProgress = inProgress;
+    }
+
+    public VsanUpgradeSystemUpgradeHistoryItem[] getHistory() {
+        return this.history;
+    }
+
+    public void setHistory(VsanUpgradeSystemUpgradeHistoryItem[] history) {
+        this.history = history;
+    }
 
     public Boolean getAborted() {
-        return aborted;
+        return this.aborted;
     }
 
     public void setAborted(Boolean aborted) {
@@ -32,34 +52,19 @@ public class VsanUpgradeSystemUpgradeStatus extends DynamicData {
     }
 
     public Boolean getCompleted() {
-        return completed;
+        return this.completed;
     }
 
     public void setCompleted(Boolean completed) {
         this.completed = completed;
     }
 
-    public VsanUpgradeSystemUpgradeHistoryItem[] getHistory() {
-        return history;
+    public Integer getProgress() {
+        return this.progress;
     }
 
-    public void setHistory(VsanUpgradeSystemUpgradeHistoryItem[] history) {
-        this.history = history;
-    }
-
-    public Boolean getInProgress() {
-        return inProgress;
-    }
-
-    public void setInProgress(Boolean inProgress) {
-        this.inProgress = inProgress;
-    }
-
-    public int getProgress() {
-        return progress;
-    }
-
-    public void setProgress(int progress) {
+    public void setProgress(Integer progress) {
         this.progress = progress;
     }
+
 }

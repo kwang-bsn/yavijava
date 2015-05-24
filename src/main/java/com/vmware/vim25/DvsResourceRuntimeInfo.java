@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -21,42 +21,38 @@ package com.vmware.vim25;
  */
 
 public class DvsResourceRuntimeInfo extends DynamicData {
-    public int capacity;
-
-    public int usage;
-
-    public int available;
-
+    public Integer capacity;
+    public Integer usage;
+    public Integer available;
     public DvsVnicAllocatedResource[] allocatedResource;
-
     public DvsVmVnicNetworkResourcePoolRuntimeInfo[] vmVnicNetworkResourcePoolRuntime;
 
-    public int getCapacity() {
-        return capacity;
+    public Integer getCapacity() {
+        return this.capacity;
     }
 
-    public void setCapacity(int capacity) {
+    public void setCapacity(Integer capacity) {
         this.capacity = capacity;
     }
 
-    public int getUsage() {
-        return usage;
+    public Integer getUsage() {
+        return this.usage;
     }
 
-    public void setUsage(int usage) {
+    public void setUsage(Integer usage) {
         this.usage = usage;
     }
 
-    public int getAvailable() {
-        return available;
+    public Integer getAvailable() {
+        return this.available;
     }
 
-    public void setAvailable(int available) {
+    public void setAvailable(Integer available) {
         this.available = available;
     }
 
     public DvsVnicAllocatedResource[] getAllocatedResource() {
-        return allocatedResource;
+        return this.allocatedResource;
     }
 
     public void setAllocatedResource(DvsVnicAllocatedResource[] allocatedResource) {
@@ -64,7 +60,7 @@ public class DvsResourceRuntimeInfo extends DynamicData {
     }
 
     public DvsVmVnicNetworkResourcePoolRuntimeInfo[] getVmVnicNetworkResourcePoolRuntime() {
-        return vmVnicNetworkResourcePoolRuntime;
+        return this.vmVnicNetworkResourcePoolRuntime;
     }
 
     public void setVmVnicNetworkResourcePoolRuntime(DvsVmVnicNetworkResourcePoolRuntimeInfo[] vmVnicNetworkResourcePoolRuntime) {

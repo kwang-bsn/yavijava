@@ -3,7 +3,9 @@ package com.vmware.vim25;
 import java.util.Calendar;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,69 +18,55 @@ import java.util.Calendar;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class HostCertificateManagerCertificateInfo extends DynamicData {
 
-    /**
-     * The issuer of the certificate.
-     */
+public class HostCertificateManagerCertificateInfo extends DynamicData {
     public String issuer;
-    /**
-     * Unknown
-     */
-    public Calendar notAfter;
-    /**
-     * The validity of the certificate.
-     */
     public Calendar notBefore;
-    /**
-     * The status of the certificate in vCenter Server. The possible values for status are as described in
-     * {@link com.vmware.vim25.HostCertificateManagerCertificateInfoCertificateStatus HostCertificateManagerCertificateInfoCertificateStatus}.
-     * If queried directly from an ESX host, the property is set to unknown.
-     */
-    public String status;
-    /**
-     * The subject of the certificate.
-     */
+    public Calendar notAfter;
     public String subject;
+    public String status;
 
     public String getIssuer() {
-        return issuer;
+        return this.issuer;
     }
 
     public void setIssuer(String issuer) {
         this.issuer = issuer;
     }
 
-    public Calendar getNotAfter() {
-        return notAfter;
-    }
-
-    public void setNotAfter(Calendar notAfter) {
-        this.notAfter = notAfter;
-    }
-
     public Calendar getNotBefore() {
-        return notBefore;
+        return this.notBefore;
     }
 
     public void setNotBefore(Calendar notBefore) {
         this.notBefore = notBefore;
     }
 
+    public Calendar getNotAfter() {
+        return this.notAfter;
+    }
+
+    public void setNotAfter(Calendar notAfter) {
+        this.notAfter = notAfter;
+    }
+
+    public String getSubject() {
+        return this.subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
     public String getStatus() {
-        return status;
+        return this.status;
     }
 
     public void setStatus(String status) {
         this.status = status;
     }
 
-    public String getSubject() {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
 }

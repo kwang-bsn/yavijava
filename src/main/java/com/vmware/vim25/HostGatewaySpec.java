@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class HostGatewaySpec extends DynamicData {
     public String gatewayType;
-
     public String gatewayId;
-
     public String trustVerificationToken;
-
     public KeyValue[] hostAuthParams;
 
     public String getGatewayType() {
-        return gatewayType;
+        return this.gatewayType;
     }
 
     public void setGatewayType(String gatewayType) {
@@ -38,7 +35,7 @@ public class HostGatewaySpec extends DynamicData {
     }
 
     public String getGatewayId() {
-        return gatewayId;
+        return this.gatewayId;
     }
 
     public void setGatewayId(String gatewayId) {
@@ -46,7 +43,7 @@ public class HostGatewaySpec extends DynamicData {
     }
 
     public String getTrustVerificationToken() {
-        return trustVerificationToken;
+        return this.trustVerificationToken;
     }
 
     public void setTrustVerificationToken(String trustVerificationToken) {
@@ -54,7 +51,7 @@ public class HostGatewaySpec extends DynamicData {
     }
 
     public KeyValue[] getHostAuthParams() {
-        return hostAuthParams;
+        return this.hostAuthParams;
     }
 
     public void setHostAuthParams(KeyValue[] hostAuthParams) {

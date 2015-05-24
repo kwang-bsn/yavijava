@@ -1,32 +1,3 @@
-/*================================================================================
-Copyright (c) 2013 Steve Jin. All Rights Reserved.
-
-Redistribution and use in source and binary forms, with or without modification, 
-are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, 
-this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice, 
-this list of conditions and the following disclaimer in the documentation 
-and/or other materials provided with the distribution.
-
-* Neither the name of VMware, Inc. nor the names of its contributors may be used
-to endorse or promote products derived from this software without specific prior 
-written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
-IN NO EVENT SHALL VMWARE, INC. OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGE.
-================================================================================*/
-
 package com.vmware.vim25;
 
 /**
@@ -34,7 +5,6 @@ package com.vmware.vim25;
  * @version 5.1
  */
 
-@SuppressWarnings("all")
 public class HostListSummary extends DynamicData {
     public ManagedObjectReference host;
     public HostHardwareSummary hardware;
@@ -47,92 +17,102 @@ public class HostListSummary extends DynamicData {
     public String managementServerIp;
     public String maxEVCModeKey;
     public String currentEVCModeKey;
+    public HostListSummaryGatewaySummary gateway;
 
     public ManagedObjectReference getHost() {
         return this.host;
-    }
-
-    public HostHardwareSummary getHardware() {
-        return this.hardware;
-    }
-
-    public HostRuntimeInfo getRuntime() {
-        return this.runtime;
-    }
-
-    public HostConfigSummary getConfig() {
-        return this.config;
-    }
-
-    public HostListSummaryQuickStats getQuickStats() {
-        return this.quickStats;
-    }
-
-    public ManagedEntityStatus getOverallStatus() {
-        return this.overallStatus;
-    }
-
-    public boolean isRebootRequired() {
-        return this.rebootRequired;
-    }
-
-    public CustomFieldValue[] getCustomValue() {
-        return this.customValue;
-    }
-
-    public String getManagementServerIp() {
-        return this.managementServerIp;
-    }
-
-    public String getMaxEVCModeKey() {
-        return this.maxEVCModeKey;
-    }
-
-    public String getCurrentEVCModeKey() {
-        return this.currentEVCModeKey;
     }
 
     public void setHost(ManagedObjectReference host) {
         this.host = host;
     }
 
+    public HostHardwareSummary getHardware() {
+        return this.hardware;
+    }
+
     public void setHardware(HostHardwareSummary hardware) {
         this.hardware = hardware;
+    }
+
+    public HostRuntimeInfo getRuntime() {
+        return this.runtime;
     }
 
     public void setRuntime(HostRuntimeInfo runtime) {
         this.runtime = runtime;
     }
 
+    public HostConfigSummary getConfig() {
+        return this.config;
+    }
+
     public void setConfig(HostConfigSummary config) {
         this.config = config;
+    }
+
+    public HostListSummaryQuickStats getQuickStats() {
+        return this.quickStats;
     }
 
     public void setQuickStats(HostListSummaryQuickStats quickStats) {
         this.quickStats = quickStats;
     }
 
+    public ManagedEntityStatus getOverallStatus() {
+        return this.overallStatus;
+    }
+
     public void setOverallStatus(ManagedEntityStatus overallStatus) {
         this.overallStatus = overallStatus;
+    }
+
+    public boolean getRebootRequired() {
+        return this.rebootRequired;
     }
 
     public void setRebootRequired(boolean rebootRequired) {
         this.rebootRequired = rebootRequired;
     }
 
+    public CustomFieldValue[] getCustomValue() {
+        return this.customValue;
+    }
+
     public void setCustomValue(CustomFieldValue[] customValue) {
         this.customValue = customValue;
+    }
+
+    public String getManagementServerIp() {
+        return this.managementServerIp;
     }
 
     public void setManagementServerIp(String managementServerIp) {
         this.managementServerIp = managementServerIp;
     }
 
+    public String getMaxEVCModeKey() {
+        return this.maxEVCModeKey;
+    }
+
     public void setMaxEVCModeKey(String maxEVCModeKey) {
         this.maxEVCModeKey = maxEVCModeKey;
+    }
+
+    public String getCurrentEVCModeKey() {
+        return this.currentEVCModeKey;
     }
 
     public void setCurrentEVCModeKey(String currentEVCModeKey) {
         this.currentEVCModeKey = currentEVCModeKey;
     }
+
+    public HostListSummaryGatewaySummary getGateway() {
+        return this.gateway;
+    }
+
+    public void setGateway(HostListSummaryGatewaySummary gateway) {
+        this.gateway = gateway;
+    }
+
 }

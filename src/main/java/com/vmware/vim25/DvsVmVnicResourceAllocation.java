@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -24,7 +24,7 @@ public class DvsVmVnicResourceAllocation extends DynamicData {
     public long reservationQuota;
 
     public long getReservationQuota() {
-        return reservationQuota;
+        return this.reservationQuota;
     }
 
     public void setReservationQuota(long reservationQuota) {

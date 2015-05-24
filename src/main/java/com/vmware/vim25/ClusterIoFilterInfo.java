@@ -24,7 +24,7 @@ public class ClusterIoFilterInfo extends IoFilterInfo {
     public String opType;
 
     public String getOpType() {
-        return opType;
+        return this.opType;
     }
 
     public void setOpType(String opType) {

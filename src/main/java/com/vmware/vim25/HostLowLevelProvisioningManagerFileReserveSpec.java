@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class HostLowLevelProvisioningManagerFileReserveSpec extends DynamicData {
     public String baseName;
-
     public String parentDir;
-
     public String fileType;
-
     public String storageProfile;
 
     public String getBaseName() {
-        return baseName;
+        return this.baseName;
     }
 
     public void setBaseName(String baseName) {
@@ -38,7 +35,7 @@ public class HostLowLevelProvisioningManagerFileReserveSpec extends DynamicData 
     }
 
     public String getParentDir() {
-        return parentDir;
+        return this.parentDir;
     }
 
     public void setParentDir(String parentDir) {
@@ -46,7 +43,7 @@ public class HostLowLevelProvisioningManagerFileReserveSpec extends DynamicData 
     }
 
     public String getFileType() {
-        return fileType;
+        return this.fileType;
     }
 
     public void setFileType(String fileType) {
@@ -54,7 +51,7 @@ public class HostLowLevelProvisioningManagerFileReserveSpec extends DynamicData 
     }
 
     public String getStorageProfile() {
-        return storageProfile;
+        return this.storageProfile;
     }
 
     public void setStorageProfile(String storageProfile) {

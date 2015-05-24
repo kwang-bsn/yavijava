@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,17 +22,13 @@ package com.vmware.vim25;
 
 public class StorageDrsAutomationConfig extends DynamicData {
     public String spaceLoadBalanceAutomationMode;
-
     public String ioLoadBalanceAutomationMode;
-
     public String ruleEnforcementAutomationMode;
-
     public String policyEnforcementAutomationMode;
-
     public String vmEvacuationAutomationMode;
 
     public String getSpaceLoadBalanceAutomationMode() {
-        return spaceLoadBalanceAutomationMode;
+        return this.spaceLoadBalanceAutomationMode;
     }
 
     public void setSpaceLoadBalanceAutomationMode(String spaceLoadBalanceAutomationMode) {
@@ -40,7 +36,7 @@ public class StorageDrsAutomationConfig extends DynamicData {
     }
 
     public String getIoLoadBalanceAutomationMode() {
-        return ioLoadBalanceAutomationMode;
+        return this.ioLoadBalanceAutomationMode;
     }
 
     public void setIoLoadBalanceAutomationMode(String ioLoadBalanceAutomationMode) {
@@ -48,7 +44,7 @@ public class StorageDrsAutomationConfig extends DynamicData {
     }
 
     public String getRuleEnforcementAutomationMode() {
-        return ruleEnforcementAutomationMode;
+        return this.ruleEnforcementAutomationMode;
     }
 
     public void setRuleEnforcementAutomationMode(String ruleEnforcementAutomationMode) {
@@ -56,7 +52,7 @@ public class StorageDrsAutomationConfig extends DynamicData {
     }
 
     public String getPolicyEnforcementAutomationMode() {
-        return policyEnforcementAutomationMode;
+        return this.policyEnforcementAutomationMode;
     }
 
     public void setPolicyEnforcementAutomationMode(String policyEnforcementAutomationMode) {
@@ -64,7 +60,7 @@ public class StorageDrsAutomationConfig extends DynamicData {
     }
 
     public String getVmEvacuationAutomationMode() {
-        return vmEvacuationAutomationMode;
+        return this.vmEvacuationAutomationMode;
     }
 
     public void setVmEvacuationAutomationMode(String vmEvacuationAutomationMode) {

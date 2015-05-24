@@ -1,10 +1,11 @@
 package com.vmware.vim25;
 
-
 import java.util.Calendar;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,22 +18,17 @@ import java.util.Calendar;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
+
 public class GuestRegKeySpec extends DynamicData {
-
-    public String classType;
     public GuestRegKeyNameSpec keyName;
-
-    public Calendar getLastWritten() {
-        return lastWritten;
-    }
-
-    public void setLastWritten(Calendar lastWritten) {
-        this.lastWritten = lastWritten;
-    }
+    public String classType;
+    public Calendar lastWritten;
 
     public GuestRegKeyNameSpec getKeyName() {
-        return keyName;
+        return this.keyName;
     }
 
     public void setKeyName(GuestRegKeyNameSpec keyName) {
@@ -40,12 +36,19 @@ public class GuestRegKeySpec extends DynamicData {
     }
 
     public String getClassType() {
-        return classType;
+        return this.classType;
     }
 
     public void setClassType(String classType) {
         this.classType = classType;
     }
 
-    public Calendar lastWritten;
+    public Calendar getLastWritten() {
+        return this.lastWritten;
+    }
+
+    public void setLastWritten(Calendar lastWritten) {
+        this.lastWritten = lastWritten;
+    }
+
 }

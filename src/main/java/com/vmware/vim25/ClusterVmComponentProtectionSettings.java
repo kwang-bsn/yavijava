@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,17 +22,13 @@ package com.vmware.vim25;
 
 public class ClusterVmComponentProtectionSettings extends DynamicData {
     public String vmStorageProtectionForAPD;
-
     public Boolean enableAPDTimeoutForHosts;
-
-    public int vmTerminateDelayForAPDSec;
-
+    public Integer vmTerminateDelayForAPDSec;
     public String vmReactionOnAPDCleared;
-
     public String vmStorageProtectionForPDL;
 
     public String getVmStorageProtectionForAPD() {
-        return vmStorageProtectionForAPD;
+        return this.vmStorageProtectionForAPD;
     }
 
     public void setVmStorageProtectionForAPD(String vmStorageProtectionForAPD) {
@@ -40,23 +36,23 @@ public class ClusterVmComponentProtectionSettings extends DynamicData {
     }
 
     public Boolean getEnableAPDTimeoutForHosts() {
-        return enableAPDTimeoutForHosts;
+        return this.enableAPDTimeoutForHosts;
     }
 
     public void setEnableAPDTimeoutForHosts(Boolean enableAPDTimeoutForHosts) {
         this.enableAPDTimeoutForHosts = enableAPDTimeoutForHosts;
     }
 
-    public int getVmTerminateDelayForAPDSec() {
-        return vmTerminateDelayForAPDSec;
+    public Integer getVmTerminateDelayForAPDSec() {
+        return this.vmTerminateDelayForAPDSec;
     }
 
-    public void setVmTerminateDelayForAPDSec(int vmTerminateDelayForAPDSec) {
+    public void setVmTerminateDelayForAPDSec(Integer vmTerminateDelayForAPDSec) {
         this.vmTerminateDelayForAPDSec = vmTerminateDelayForAPDSec;
     }
 
     public String getVmReactionOnAPDCleared() {
-        return vmReactionOnAPDCleared;
+        return this.vmReactionOnAPDCleared;
     }
 
     public void setVmReactionOnAPDCleared(String vmReactionOnAPDCleared) {
@@ -64,7 +60,7 @@ public class ClusterVmComponentProtectionSettings extends DynamicData {
     }
 
     public String getVmStorageProtectionForPDL() {
-        return vmStorageProtectionForPDL;
+        return this.vmStorageProtectionForPDL;
     }
 
     public void setVmStorageProtectionForPDL(String vmStorageProtectionForPDL) {

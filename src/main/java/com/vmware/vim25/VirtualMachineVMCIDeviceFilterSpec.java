@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,19 +22,14 @@ package com.vmware.vim25;
 
 public class VirtualMachineVMCIDeviceFilterSpec extends DynamicData {
     public long rank;
-
     public String action;
-
     public String protocol;
-
     public String direction;
-
     public long lowerDstPortBoundary;
-
     public long upperDstPortBoundary;
 
     public long getRank() {
-        return rank;
+        return this.rank;
     }
 
     public void setRank(long rank) {
@@ -42,7 +37,7 @@ public class VirtualMachineVMCIDeviceFilterSpec extends DynamicData {
     }
 
     public String getAction() {
-        return action;
+        return this.action;
     }
 
     public void setAction(String action) {
@@ -50,7 +45,7 @@ public class VirtualMachineVMCIDeviceFilterSpec extends DynamicData {
     }
 
     public String getProtocol() {
-        return protocol;
+        return this.protocol;
     }
 
     public void setProtocol(String protocol) {
@@ -58,7 +53,7 @@ public class VirtualMachineVMCIDeviceFilterSpec extends DynamicData {
     }
 
     public String getDirection() {
-        return direction;
+        return this.direction;
     }
 
     public void setDirection(String direction) {
@@ -66,7 +61,7 @@ public class VirtualMachineVMCIDeviceFilterSpec extends DynamicData {
     }
 
     public long getLowerDstPortBoundary() {
-        return lowerDstPortBoundary;
+        return this.lowerDstPortBoundary;
     }
 
     public void setLowerDstPortBoundary(long lowerDstPortBoundary) {
@@ -74,7 +69,7 @@ public class VirtualMachineVMCIDeviceFilterSpec extends DynamicData {
     }
 
     public long getUpperDstPortBoundary() {
-        return upperDstPortBoundary;
+        return this.upperDstPortBoundary;
     }
 
     public void setUpperDstPortBoundary(long upperDstPortBoundary) {

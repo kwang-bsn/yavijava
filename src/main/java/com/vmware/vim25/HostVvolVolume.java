@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class HostVvolVolume extends HostFileSystemVolume {
     public String scId;
-
     public VVolHostPE[] hostPE;
-
     public VimVasaProviderInfo[] vasaProviderInfo;
-
     public VASAStorageArray[] storageArray;
 
     public String getScId() {
-        return scId;
+        return this.scId;
     }
 
     public void setScId(String scId) {
@@ -38,7 +35,7 @@ public class HostVvolVolume extends HostFileSystemVolume {
     }
 
     public VVolHostPE[] getHostPE() {
-        return hostPE;
+        return this.hostPE;
     }
 
     public void setHostPE(VVolHostPE[] hostPE) {
@@ -46,7 +43,7 @@ public class HostVvolVolume extends HostFileSystemVolume {
     }
 
     public VimVasaProviderInfo[] getVasaProviderInfo() {
-        return vasaProviderInfo;
+        return this.vasaProviderInfo;
     }
 
     public void setVasaProviderInfo(VimVasaProviderInfo[] vasaProviderInfo) {
@@ -54,7 +51,7 @@ public class HostVvolVolume extends HostFileSystemVolume {
     }
 
     public VASAStorageArray[] getStorageArray() {
-        return storageArray;
+        return this.storageArray;
     }
 
     public void setStorageArray(VASAStorageArray[] storageArray) {

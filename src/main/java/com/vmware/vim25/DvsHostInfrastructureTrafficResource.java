@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class DvsHostInfrastructureTrafficResource extends DynamicData {
     public String key;
-
     public String description;
-
     public DvsHostInfrastructureTrafficResourceAllocation allocationInfo;
 
     public String getKey() {
-        return key;
+        return this.key;
     }
 
     public void setKey(String key) {
@@ -36,7 +34,7 @@ public class DvsHostInfrastructureTrafficResource extends DynamicData {
     }
 
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {
@@ -44,7 +42,7 @@ public class DvsHostInfrastructureTrafficResource extends DynamicData {
     }
 
     public DvsHostInfrastructureTrafficResourceAllocation getAllocationInfo() {
-        return allocationInfo;
+        return this.allocationInfo;
     }
 
     public void setAllocationInfo(DvsHostInfrastructureTrafficResourceAllocation allocationInfo) {

@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,21 +22,15 @@ package com.vmware.vim25;
 
 public class HostProtocolEndpoint extends DynamicData {
     public String peType;
-
     public String uuid;
-
     public ManagedObjectReference[] hostKey;
-
     public String storageArray;
-
     public String nfsServer;
-
     public String nfsDir;
-
     public String deviceId;
 
     public String getPeType() {
-        return peType;
+        return this.peType;
     }
 
     public void setPeType(String peType) {
@@ -44,7 +38,7 @@ public class HostProtocolEndpoint extends DynamicData {
     }
 
     public String getUuid() {
-        return uuid;
+        return this.uuid;
     }
 
     public void setUuid(String uuid) {
@@ -52,7 +46,7 @@ public class HostProtocolEndpoint extends DynamicData {
     }
 
     public ManagedObjectReference[] getHostKey() {
-        return hostKey;
+        return this.hostKey;
     }
 
     public void setHostKey(ManagedObjectReference[] hostKey) {
@@ -60,7 +54,7 @@ public class HostProtocolEndpoint extends DynamicData {
     }
 
     public String getStorageArray() {
-        return storageArray;
+        return this.storageArray;
     }
 
     public void setStorageArray(String storageArray) {
@@ -68,7 +62,7 @@ public class HostProtocolEndpoint extends DynamicData {
     }
 
     public String getNfsServer() {
-        return nfsServer;
+        return this.nfsServer;
     }
 
     public void setNfsServer(String nfsServer) {
@@ -76,7 +70,7 @@ public class HostProtocolEndpoint extends DynamicData {
     }
 
     public String getNfsDir() {
-        return nfsDir;
+        return this.nfsDir;
     }
 
     public void setNfsDir(String nfsDir) {
@@ -84,7 +78,7 @@ public class HostProtocolEndpoint extends DynamicData {
     }
 
     public String getDeviceId() {
-        return deviceId;
+        return this.deviceId;
     }
 
     public void setDeviceId(String deviceId) {

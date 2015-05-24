@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Thu May 21 00:39:13 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -24,7 +24,7 @@ public class GuestRegValueBinarySpec extends GuestRegValueDataSpec {
     public byte[] value;
 
     public byte[] getValue() {
-        return value;
+        return this.value;
     }
 
     public void setValue(byte[] value) {

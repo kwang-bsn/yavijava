@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,17 +22,13 @@ package com.vmware.vim25;
 
 public class VirtualMachineVMCIDeviceOptionFilterSpecOption extends DynamicData {
     public ChoiceOption action;
-
     public ChoiceOption protocol;
-
     public ChoiceOption direction;
-
     public LongOption lowerDstPortBoundary;
-
     public LongOption upperDstPortBoundary;
 
     public ChoiceOption getAction() {
-        return action;
+        return this.action;
     }
 
     public void setAction(ChoiceOption action) {
@@ -40,7 +36,7 @@ public class VirtualMachineVMCIDeviceOptionFilterSpecOption extends DynamicData 
     }
 
     public ChoiceOption getProtocol() {
-        return protocol;
+        return this.protocol;
     }
 
     public void setProtocol(ChoiceOption protocol) {
@@ -48,7 +44,7 @@ public class VirtualMachineVMCIDeviceOptionFilterSpecOption extends DynamicData 
     }
 
     public ChoiceOption getDirection() {
-        return direction;
+        return this.direction;
     }
 
     public void setDirection(ChoiceOption direction) {
@@ -56,7 +52,7 @@ public class VirtualMachineVMCIDeviceOptionFilterSpecOption extends DynamicData 
     }
 
     public LongOption getLowerDstPortBoundary() {
-        return lowerDstPortBoundary;
+        return this.lowerDstPortBoundary;
     }
 
     public void setLowerDstPortBoundary(LongOption lowerDstPortBoundary) {
@@ -64,7 +60,7 @@ public class VirtualMachineVMCIDeviceOptionFilterSpecOption extends DynamicData 
     }
 
     public LongOption getUpperDstPortBoundary() {
-        return upperDstPortBoundary;
+        return this.upperDstPortBoundary;
     }
 
     public void setUpperDstPortBoundary(LongOption upperDstPortBoundary) {

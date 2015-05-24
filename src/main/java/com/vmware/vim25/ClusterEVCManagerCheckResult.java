@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class ClusterEVCManagerCheckResult extends DynamicData {
     public String evcModeKey;
-
     public LocalizedMethodFault error;
-
     public ManagedObjectReference[] host;
 
     public String getEvcModeKey() {
-        return evcModeKey;
+        return this.evcModeKey;
     }
 
     public void setEvcModeKey(String evcModeKey) {
@@ -36,7 +34,7 @@ public class ClusterEVCManagerCheckResult extends DynamicData {
     }
 
     public LocalizedMethodFault getError() {
-        return error;
+        return this.error;
     }
 
     public void setError(LocalizedMethodFault error) {
@@ -44,7 +42,7 @@ public class ClusterEVCManagerCheckResult extends DynamicData {
     }
 
     public ManagedObjectReference[] getHost() {
-        return host;
+        return this.host;
     }
 
     public void setHost(ManagedObjectReference[] host) {

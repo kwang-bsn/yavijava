@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +16,16 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class GuestRegValueNameSpec extends DynamicData {
 
+public class GuestRegValueNameSpec extends DynamicData {
     public GuestRegKeyNameSpec keyName;
     public String name;
 
     public GuestRegKeyNameSpec getKeyName() {
-        return keyName;
+        return this.keyName;
     }
 
     public void setKeyName(GuestRegKeyNameSpec keyName) {
@@ -29,10 +33,11 @@ public class GuestRegValueNameSpec extends DynamicData {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
+
 }

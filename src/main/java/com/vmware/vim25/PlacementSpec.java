@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,73 +16,99 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class PlacementSpec extends DynamicData {
 
-    public String cloneName;
-    public VirtualMachineCloneSpec cloneSpec;
+public class PlacementSpec extends DynamicData {
+    public VirtualMachineMovePriority priority;
+    public ManagedObjectReference vm;
     public VirtualMachineConfigSpec configSpec;
-    public ManagedObjectReference[] datastores;
-    public Boolean disallowPrerequisiteMoves;
+    public VirtualMachineRelocateSpec relocateSpec;
     public ManagedObjectReference[] hosts;
+    public ManagedObjectReference[] datastores;
+    public ManagedObjectReference[] storagePods;
+    public Boolean disallowPrerequisiteMoves;
+    public ClusterRuleInfo[] rules;
     public String key;
     public String placementType;
-    public VirtualMachineMovePriority priority;
-    public VirtualMachineRelocateSpec relocateSpec;
-    public ClusterRuleInfo[] rules;
-    public ManagedObjectReference[] storagePods;
-    public ManagedObjectReference vm;
+    public VirtualMachineCloneSpec cloneSpec;
+    public String cloneName;
 
-    public String getCloneName() {
-        return cloneName;
+    public VirtualMachineMovePriority getPriority() {
+        return this.priority;
     }
 
-    public void setCloneName(String cloneName) {
-        this.cloneName = cloneName;
+    public void setPriority(VirtualMachineMovePriority priority) {
+        this.priority = priority;
     }
 
-    public VirtualMachineCloneSpec getCloneSpec() {
-        return cloneSpec;
+    public ManagedObjectReference getVm() {
+        return this.vm;
     }
 
-    public void setCloneSpec(VirtualMachineCloneSpec cloneSpec) {
-        this.cloneSpec = cloneSpec;
+    public void setVm(ManagedObjectReference vm) {
+        this.vm = vm;
     }
 
     public VirtualMachineConfigSpec getConfigSpec() {
-        return configSpec;
+        return this.configSpec;
     }
 
     public void setConfigSpec(VirtualMachineConfigSpec configSpec) {
         this.configSpec = configSpec;
     }
 
-    public ManagedObjectReference[] getDatastores() {
-        return datastores;
+    public VirtualMachineRelocateSpec getRelocateSpec() {
+        return this.relocateSpec;
     }
 
-    public void setDatastores(ManagedObjectReference[] datastores) {
-        this.datastores = datastores;
-    }
-
-    public Boolean getDisallowPrerequisiteMoves() {
-        return disallowPrerequisiteMoves;
-    }
-
-    public void setDisallowPrerequisiteMoves(Boolean disallowPrerequisiteMoves) {
-        this.disallowPrerequisiteMoves = disallowPrerequisiteMoves;
+    public void setRelocateSpec(VirtualMachineRelocateSpec relocateSpec) {
+        this.relocateSpec = relocateSpec;
     }
 
     public ManagedObjectReference[] getHosts() {
-        return hosts;
+        return this.hosts;
     }
 
     public void setHosts(ManagedObjectReference[] hosts) {
         this.hosts = hosts;
     }
 
+    public ManagedObjectReference[] getDatastores() {
+        return this.datastores;
+    }
+
+    public void setDatastores(ManagedObjectReference[] datastores) {
+        this.datastores = datastores;
+    }
+
+    public ManagedObjectReference[] getStoragePods() {
+        return this.storagePods;
+    }
+
+    public void setStoragePods(ManagedObjectReference[] storagePods) {
+        this.storagePods = storagePods;
+    }
+
+    public Boolean getDisallowPrerequisiteMoves() {
+        return this.disallowPrerequisiteMoves;
+    }
+
+    public void setDisallowPrerequisiteMoves(Boolean disallowPrerequisiteMoves) {
+        this.disallowPrerequisiteMoves = disallowPrerequisiteMoves;
+    }
+
+    public ClusterRuleInfo[] getRules() {
+        return this.rules;
+    }
+
+    public void setRules(ClusterRuleInfo[] rules) {
+        this.rules = rules;
+    }
+
     public String getKey() {
-        return key;
+        return this.key;
     }
 
     public void setKey(String key) {
@@ -88,50 +116,27 @@ public class PlacementSpec extends DynamicData {
     }
 
     public String getPlacementType() {
-        return placementType;
+        return this.placementType;
     }
 
     public void setPlacementType(String placementType) {
         this.placementType = placementType;
     }
 
-    public VirtualMachineMovePriority getPriority() {
-        return priority;
+    public VirtualMachineCloneSpec getCloneSpec() {
+        return this.cloneSpec;
     }
 
-    public void setPriority(VirtualMachineMovePriority priority) {
-        this.priority = priority;
+    public void setCloneSpec(VirtualMachineCloneSpec cloneSpec) {
+        this.cloneSpec = cloneSpec;
     }
 
-    public VirtualMachineRelocateSpec getRelocateSpec() {
-        return relocateSpec;
+    public String getCloneName() {
+        return this.cloneName;
     }
 
-    public void setRelocateSpec(VirtualMachineRelocateSpec relocateSpec) {
-        this.relocateSpec = relocateSpec;
+    public void setCloneName(String cloneName) {
+        this.cloneName = cloneName;
     }
 
-    public ClusterRuleInfo[] getRules() {
-        return rules;
-    }
-
-    public void setRules(ClusterRuleInfo[] rules) {
-        this.rules = rules;
-    }
-
-    public ManagedObjectReference[] getStoragePods() {
-        return storagePods;
-    }
-
-    public void setStoragePods(ManagedObjectReference[] storagePods) {
-        this.storagePods = storagePods;
-    }
-
-    public ManagedObjectReference getVm() {
-        return vm;
-    }
-
-    public void setVm(ManagedObjectReference vm) {
-        this.vm = vm;
-    }
 }

@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class VimVasaProvider extends DynamicData {
     public String url;
-
     public String name;
-
     public String selfSignedCertificate;
 
     public String getUrl() {
-        return url;
+        return this.url;
     }
 
     public void setUrl(String url) {
@@ -36,7 +34,7 @@ public class VimVasaProvider extends DynamicData {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -44,7 +42,7 @@ public class VimVasaProvider extends DynamicData {
     }
 
     public String getSelfSignedCertificate() {
-        return selfSignedCertificate;
+        return this.selfSignedCertificate;
     }
 
     public void setSelfSignedCertificate(String selfSignedCertificate) {

@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class HostInternetScsiHbaIscsiIpv6Address extends DynamicData {
     public String address;
-
     public int prefixLength;
-
     public String origin;
-
     public String operation;
 
     public String getAddress() {
-        return address;
+        return this.address;
     }
 
     public void setAddress(String address) {
@@ -38,7 +35,7 @@ public class HostInternetScsiHbaIscsiIpv6Address extends DynamicData {
     }
 
     public int getPrefixLength() {
-        return prefixLength;
+        return this.prefixLength;
     }
 
     public void setPrefixLength(int prefixLength) {
@@ -46,7 +43,7 @@ public class HostInternetScsiHbaIscsiIpv6Address extends DynamicData {
     }
 
     public String getOrigin() {
-        return origin;
+        return this.origin;
     }
 
     public void setOrigin(String origin) {
@@ -54,7 +51,7 @@ public class HostInternetScsiHbaIscsiIpv6Address extends DynamicData {
     }
 
     public String getOperation() {
-        return operation;
+        return this.operation;
     }
 
     public void setOperation(String operation) {

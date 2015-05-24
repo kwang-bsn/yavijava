@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +16,28 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class PlacementResult extends DynamicData {
 
-    public ClusterDrsFaults drsFault;
+public class PlacementResult extends DynamicData {
     public ClusterRecommendation[] recommendations;
+    public ClusterDrsFaults drsFault;
+
+    public ClusterRecommendation[] getRecommendations() {
+        return this.recommendations;
+    }
+
+    public void setRecommendations(ClusterRecommendation[] recommendations) {
+        this.recommendations = recommendations;
+    }
 
     public ClusterDrsFaults getDrsFault() {
-        return drsFault;
+        return this.drsFault;
     }
 
     public void setDrsFault(ClusterDrsFaults drsFault) {
         this.drsFault = drsFault;
     }
 
-    public ClusterRecommendation[] getRecommendations() {
-        return recommendations;
-    }
-
-    public void setRecommendations(ClusterRecommendation[] recommendations) {
-        this.recommendations = recommendations;
-    }
 }

@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,11 +22,10 @@ package com.vmware.vim25;
 
 public class FaultToleranceDiskSpec extends DynamicData {
     public VirtualDevice disk;
-
     public ManagedObjectReference datastore;
 
     public VirtualDevice getDisk() {
-        return disk;
+        return this.disk;
     }
 
     public void setDisk(VirtualDevice disk) {
@@ -34,7 +33,7 @@ public class FaultToleranceDiskSpec extends DynamicData {
     }
 
     public ManagedObjectReference getDatastore() {
-        return datastore;
+        return this.datastore;
     }
 
     public void setDatastore(ManagedObjectReference datastore) {

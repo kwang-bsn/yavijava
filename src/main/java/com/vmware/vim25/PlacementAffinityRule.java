@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class PlacementAffinityRule extends DynamicData {
     public String ruleType;
-
     public String ruleScope;
-
     public ManagedObjectReference[] vms;
-
     public String[] keys;
 
     public String getRuleType() {
-        return ruleType;
+        return this.ruleType;
     }
 
     public void setRuleType(String ruleType) {
@@ -38,7 +35,7 @@ public class PlacementAffinityRule extends DynamicData {
     }
 
     public String getRuleScope() {
-        return ruleScope;
+        return this.ruleScope;
     }
 
     public void setRuleScope(String ruleScope) {
@@ -46,7 +43,7 @@ public class PlacementAffinityRule extends DynamicData {
     }
 
     public ManagedObjectReference[] getVms() {
-        return vms;
+        return this.vms;
     }
 
     public void setVms(ManagedObjectReference[] vms) {
@@ -54,7 +51,7 @@ public class PlacementAffinityRule extends DynamicData {
     }
 
     public String[] getKeys() {
-        return keys;
+        return this.keys;
     }
 
     public void setKeys(String[] keys) {

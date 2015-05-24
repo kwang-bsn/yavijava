@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,33 +22,21 @@ package com.vmware.vim25;
 
 public class ClusterUsageSummary extends DynamicData {
     public int totalCpuCapacityMhz;
-
     public int totalMemCapacityMB;
-
     public int cpuReservationMhz;
-
     public int memReservationMB;
-
-    public int poweredOffCpuReservationMhz;
-
-    public int poweredOffMemReservationMB;
-
+    public Integer poweredOffCpuReservationMhz;
+    public Integer poweredOffMemReservationMB;
     public int cpuDemandMhz;
-
     public int memDemandMB;
-
     public long statsGenNumber;
-
     public int cpuEntitledMhz;
-
     public int memEntitledMB;
-
     public int poweredOffVmCount;
-
     public int totalVmCount;
 
     public int getTotalCpuCapacityMhz() {
-        return totalCpuCapacityMhz;
+        return this.totalCpuCapacityMhz;
     }
 
     public void setTotalCpuCapacityMhz(int totalCpuCapacityMhz) {
@@ -56,7 +44,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getTotalMemCapacityMB() {
-        return totalMemCapacityMB;
+        return this.totalMemCapacityMB;
     }
 
     public void setTotalMemCapacityMB(int totalMemCapacityMB) {
@@ -64,7 +52,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getCpuReservationMhz() {
-        return cpuReservationMhz;
+        return this.cpuReservationMhz;
     }
 
     public void setCpuReservationMhz(int cpuReservationMhz) {
@@ -72,31 +60,31 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getMemReservationMB() {
-        return memReservationMB;
+        return this.memReservationMB;
     }
 
     public void setMemReservationMB(int memReservationMB) {
         this.memReservationMB = memReservationMB;
     }
 
-    public int getPoweredOffCpuReservationMhz() {
-        return poweredOffCpuReservationMhz;
+    public Integer getPoweredOffCpuReservationMhz() {
+        return this.poweredOffCpuReservationMhz;
     }
 
-    public void setPoweredOffCpuReservationMhz(int poweredOffCpuReservationMhz) {
+    public void setPoweredOffCpuReservationMhz(Integer poweredOffCpuReservationMhz) {
         this.poweredOffCpuReservationMhz = poweredOffCpuReservationMhz;
     }
 
-    public int getPoweredOffMemReservationMB() {
-        return poweredOffMemReservationMB;
+    public Integer getPoweredOffMemReservationMB() {
+        return this.poweredOffMemReservationMB;
     }
 
-    public void setPoweredOffMemReservationMB(int poweredOffMemReservationMB) {
+    public void setPoweredOffMemReservationMB(Integer poweredOffMemReservationMB) {
         this.poweredOffMemReservationMB = poweredOffMemReservationMB;
     }
 
     public int getCpuDemandMhz() {
-        return cpuDemandMhz;
+        return this.cpuDemandMhz;
     }
 
     public void setCpuDemandMhz(int cpuDemandMhz) {
@@ -104,7 +92,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getMemDemandMB() {
-        return memDemandMB;
+        return this.memDemandMB;
     }
 
     public void setMemDemandMB(int memDemandMB) {
@@ -112,7 +100,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public long getStatsGenNumber() {
-        return statsGenNumber;
+        return this.statsGenNumber;
     }
 
     public void setStatsGenNumber(long statsGenNumber) {
@@ -120,7 +108,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getCpuEntitledMhz() {
-        return cpuEntitledMhz;
+        return this.cpuEntitledMhz;
     }
 
     public void setCpuEntitledMhz(int cpuEntitledMhz) {
@@ -128,7 +116,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getMemEntitledMB() {
-        return memEntitledMB;
+        return this.memEntitledMB;
     }
 
     public void setMemEntitledMB(int memEntitledMB) {
@@ -136,7 +124,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getPoweredOffVmCount() {
-        return poweredOffVmCount;
+        return this.poweredOffVmCount;
     }
 
     public void setPoweredOffVmCount(int poweredOffVmCount) {
@@ -144,7 +132,7 @@ public class ClusterUsageSummary extends DynamicData {
     }
 
     public int getTotalVmCount() {
-        return totalVmCount;
+        return this.totalVmCount;
     }
 
     public void setTotalVmCount(int totalVmCount) {

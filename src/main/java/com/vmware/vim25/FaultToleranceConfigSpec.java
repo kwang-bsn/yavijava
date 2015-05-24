@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,11 +22,10 @@ package com.vmware.vim25;
 
 public class FaultToleranceConfigSpec extends DynamicData {
     public FaultToleranceMetaSpec metaDataPath;
-
     public FaultToleranceVMConfigSpec secondaryVmSpec;
 
     public FaultToleranceMetaSpec getMetaDataPath() {
-        return metaDataPath;
+        return this.metaDataPath;
     }
 
     public void setMetaDataPath(FaultToleranceMetaSpec metaDataPath) {
@@ -34,7 +33,7 @@ public class FaultToleranceConfigSpec extends DynamicData {
     }
 
     public FaultToleranceVMConfigSpec getSecondaryVmSpec() {
-        return secondaryVmSpec;
+        return this.secondaryVmSpec;
     }
 
     public void setSecondaryVmSpec(FaultToleranceVMConfigSpec secondaryVmSpec) {

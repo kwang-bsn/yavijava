@@ -1,7 +1,9 @@
 package com.vmware.vim25;
 
 /**
- * Copyright 2015 Michael Rice <michael@michaelrice.org>
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +16,28 @@ package com.vmware.vim25;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * @since 6.0
  */
-public class GuestRegValueSpec extends DynamicData {
 
-    public GuestRegValueDataSpec data;
+public class GuestRegValueSpec extends DynamicData {
     public GuestRegValueNameSpec name;
+    public GuestRegValueDataSpec data;
+
+    public GuestRegValueNameSpec getName() {
+        return this.name;
+    }
+
+    public void setName(GuestRegValueNameSpec name) {
+        this.name = name;
+    }
 
     public GuestRegValueDataSpec getData() {
-        return data;
+        return this.data;
     }
 
     public void setData(GuestRegValueDataSpec data) {
         this.data = data;
     }
 
-    public GuestRegValueNameSpec getName() {
-        return name;
-    }
-
-    public void setName(GuestRegValueNameSpec name) {
-        this.name = name;
-    }
 }

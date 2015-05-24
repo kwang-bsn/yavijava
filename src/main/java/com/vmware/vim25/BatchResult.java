@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class BatchResult extends DynamicData {
     public String result;
-
     public String hostKey;
-
     public ManagedObjectReference ds;
-
     public LocalizedMethodFault fault;
 
     public String getResult() {
-        return result;
+        return this.result;
     }
 
     public void setResult(String result) {
@@ -38,7 +35,7 @@ public class BatchResult extends DynamicData {
     }
 
     public String getHostKey() {
-        return hostKey;
+        return this.hostKey;
     }
 
     public void setHostKey(String hostKey) {
@@ -46,7 +43,7 @@ public class BatchResult extends DynamicData {
     }
 
     public ManagedObjectReference getDs() {
-        return ds;
+        return this.ds;
     }
 
     public void setDs(ManagedObjectReference ds) {
@@ -54,7 +51,7 @@ public class BatchResult extends DynamicData {
     }
 
     public LocalizedMethodFault getFault() {
-        return fault;
+        return this.fault;
     }
 
     public void setFault(LocalizedMethodFault fault) {

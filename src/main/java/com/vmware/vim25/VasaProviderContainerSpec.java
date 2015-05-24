@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class VasaProviderContainerSpec extends DynamicData {
     public VimVasaProviderInfo[] vasaProviderInfo;
-
     public String scId;
-
     public boolean deleted;
 
     public VimVasaProviderInfo[] getVasaProviderInfo() {
-        return vasaProviderInfo;
+        return this.vasaProviderInfo;
     }
 
     public void setVasaProviderInfo(VimVasaProviderInfo[] vasaProviderInfo) {
@@ -36,7 +34,7 @@ public class VasaProviderContainerSpec extends DynamicData {
     }
 
     public String getScId() {
-        return scId;
+        return this.scId;
     }
 
     public void setScId(String scId) {
@@ -44,7 +42,7 @@ public class VasaProviderContainerSpec extends DynamicData {
     }
 
     public boolean getDeleted() {
-        return deleted;
+        return this.deleted;
     }
 
     public void setDeleted(boolean deleted) {

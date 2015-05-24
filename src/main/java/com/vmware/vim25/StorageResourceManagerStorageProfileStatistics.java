@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class StorageResourceManagerStorageProfileStatistics extends DynamicData {
     public String profileId;
-
     public long totalSpaceMB;
-
     public long usedSpaceMB;
 
     public String getProfileId() {
-        return profileId;
+        return this.profileId;
     }
 
     public void setProfileId(String profileId) {
@@ -36,7 +34,7 @@ public class StorageResourceManagerStorageProfileStatistics extends DynamicData 
     }
 
     public long getTotalSpaceMB() {
-        return totalSpaceMB;
+        return this.totalSpaceMB;
     }
 
     public void setTotalSpaceMB(long totalSpaceMB) {
@@ -44,7 +42,7 @@ public class StorageResourceManagerStorageProfileStatistics extends DynamicData 
     }
 
     public long getUsedSpaceMB() {
-        return usedSpaceMB;
+        return this.usedSpaceMB;
     }
 
     public void setUsedSpaceMB(long usedSpaceMB) {

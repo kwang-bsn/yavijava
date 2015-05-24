@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,15 +22,12 @@ package com.vmware.vim25;
 
 public class PlacementRankSpec extends DynamicData {
     public PlacementSpec[] specs;
-
     public ManagedObjectReference[] clusters;
-
     public PlacementAffinityRule[] rules;
-
     public StorageDrsPlacementRankVmSpec[] placementRankByVm;
 
     public PlacementSpec[] getSpecs() {
-        return specs;
+        return this.specs;
     }
 
     public void setSpecs(PlacementSpec[] specs) {
@@ -38,7 +35,7 @@ public class PlacementRankSpec extends DynamicData {
     }
 
     public ManagedObjectReference[] getClusters() {
-        return clusters;
+        return this.clusters;
     }
 
     public void setClusters(ManagedObjectReference[] clusters) {
@@ -46,7 +43,7 @@ public class PlacementRankSpec extends DynamicData {
     }
 
     public PlacementAffinityRule[] getRules() {
-        return rules;
+        return this.rules;
     }
 
     public void setRules(PlacementAffinityRule[] rules) {
@@ -54,7 +51,7 @@ public class PlacementRankSpec extends DynamicData {
     }
 
     public StorageDrsPlacementRankVmSpec[] getPlacementRankByVm() {
-        return placementRankByVm;
+        return this.placementRankByVm;
     }
 
     public void setPlacementRankByVm(StorageDrsPlacementRankVmSpec[] placementRankByVm) {

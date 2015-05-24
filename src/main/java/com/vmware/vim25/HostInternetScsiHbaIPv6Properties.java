@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,17 +22,13 @@ package com.vmware.vim25;
 
 public class HostInternetScsiHbaIPv6Properties extends DynamicData {
     public HostInternetScsiHbaIscsiIpv6Address[] iscsiIpv6Address;
-
     public Boolean ipv6DhcpConfigurationEnabled;
-
     public Boolean ipv6LinkLocalAutoConfigurationEnabled;
-
     public Boolean ipv6RouterAdvertisementConfigurationEnabled;
-
     public String ipv6DefaultGateway;
 
     public HostInternetScsiHbaIscsiIpv6Address[] getIscsiIpv6Address() {
-        return iscsiIpv6Address;
+        return this.iscsiIpv6Address;
     }
 
     public void setIscsiIpv6Address(HostInternetScsiHbaIscsiIpv6Address[] iscsiIpv6Address) {
@@ -40,7 +36,7 @@ public class HostInternetScsiHbaIPv6Properties extends DynamicData {
     }
 
     public Boolean getIpv6DhcpConfigurationEnabled() {
-        return ipv6DhcpConfigurationEnabled;
+        return this.ipv6DhcpConfigurationEnabled;
     }
 
     public void setIpv6DhcpConfigurationEnabled(Boolean ipv6DhcpConfigurationEnabled) {
@@ -48,7 +44,7 @@ public class HostInternetScsiHbaIPv6Properties extends DynamicData {
     }
 
     public Boolean getIpv6LinkLocalAutoConfigurationEnabled() {
-        return ipv6LinkLocalAutoConfigurationEnabled;
+        return this.ipv6LinkLocalAutoConfigurationEnabled;
     }
 
     public void setIpv6LinkLocalAutoConfigurationEnabled(Boolean ipv6LinkLocalAutoConfigurationEnabled) {
@@ -56,7 +52,7 @@ public class HostInternetScsiHbaIPv6Properties extends DynamicData {
     }
 
     public Boolean getIpv6RouterAdvertisementConfigurationEnabled() {
-        return ipv6RouterAdvertisementConfigurationEnabled;
+        return this.ipv6RouterAdvertisementConfigurationEnabled;
     }
 
     public void setIpv6RouterAdvertisementConfigurationEnabled(Boolean ipv6RouterAdvertisementConfigurationEnabled) {
@@ -64,7 +60,7 @@ public class HostInternetScsiHbaIPv6Properties extends DynamicData {
     }
 
     public String getIpv6DefaultGateway() {
-        return ipv6DefaultGateway;
+        return this.ipv6DefaultGateway;
     }
 
     public void setIpv6DefaultGateway(String ipv6DefaultGateway) {

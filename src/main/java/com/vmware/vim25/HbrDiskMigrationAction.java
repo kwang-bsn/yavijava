@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,31 +22,20 @@ package com.vmware.vim25;
 
 public class HbrDiskMigrationAction extends ClusterAction {
     public String collectionId;
-
     public String collectionName;
-
     public String[] diskIds;
-
     public ManagedObjectReference source;
-
     public ManagedObjectReference destination;
-
     public long sizeTransferred;
-
     public float spaceUtilSrcBefore;
-
     public float spaceUtilDstBefore;
-
     public float spaceUtilSrcAfter;
-
     public float spaceUtilDstAfter;
-
     public float ioLatencySrcBefore;
-
     public float ioLatencyDstBefore;
 
     public String getCollectionId() {
-        return collectionId;
+        return this.collectionId;
     }
 
     public void setCollectionId(String collectionId) {
@@ -54,7 +43,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public String getCollectionName() {
-        return collectionName;
+        return this.collectionName;
     }
 
     public void setCollectionName(String collectionName) {
@@ -62,7 +51,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public String[] getDiskIds() {
-        return diskIds;
+        return this.diskIds;
     }
 
     public void setDiskIds(String[] diskIds) {
@@ -70,7 +59,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public ManagedObjectReference getSource() {
-        return source;
+        return this.source;
     }
 
     public void setSource(ManagedObjectReference source) {
@@ -78,7 +67,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public ManagedObjectReference getDestination() {
-        return destination;
+        return this.destination;
     }
 
     public void setDestination(ManagedObjectReference destination) {
@@ -86,7 +75,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public long getSizeTransferred() {
-        return sizeTransferred;
+        return this.sizeTransferred;
     }
 
     public void setSizeTransferred(long sizeTransferred) {
@@ -94,7 +83,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public float getSpaceUtilSrcBefore() {
-        return spaceUtilSrcBefore;
+        return this.spaceUtilSrcBefore;
     }
 
     public void setSpaceUtilSrcBefore(float spaceUtilSrcBefore) {
@@ -102,7 +91,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public float getSpaceUtilDstBefore() {
-        return spaceUtilDstBefore;
+        return this.spaceUtilDstBefore;
     }
 
     public void setSpaceUtilDstBefore(float spaceUtilDstBefore) {
@@ -110,7 +99,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public float getSpaceUtilSrcAfter() {
-        return spaceUtilSrcAfter;
+        return this.spaceUtilSrcAfter;
     }
 
     public void setSpaceUtilSrcAfter(float spaceUtilSrcAfter) {
@@ -118,7 +107,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public float getSpaceUtilDstAfter() {
-        return spaceUtilDstAfter;
+        return this.spaceUtilDstAfter;
     }
 
     public void setSpaceUtilDstAfter(float spaceUtilDstAfter) {
@@ -126,7 +115,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public float getIoLatencySrcBefore() {
-        return ioLatencySrcBefore;
+        return this.ioLatencySrcBefore;
     }
 
     public void setIoLatencySrcBefore(float ioLatencySrcBefore) {
@@ -134,7 +123,7 @@ public class HbrDiskMigrationAction extends ClusterAction {
     }
 
     public float getIoLatencyDstBefore() {
-        return ioLatencyDstBefore;
+        return this.ioLatencyDstBefore;
     }
 
     public void setIoLatencyDstBefore(float ioLatencyDstBefore) {

@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:35 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class DvsVnicAllocatedResource extends DynamicData {
     public ManagedObjectReference vm;
-
     public String vnicKey;
-
     public long reservation;
 
     public ManagedObjectReference getVm() {
-        return vm;
+        return this.vm;
     }
 
     public void setVm(ManagedObjectReference vm) {
@@ -36,7 +34,7 @@ public class DvsVnicAllocatedResource extends DynamicData {
     }
 
     public String getVnicKey() {
-        return vnicKey;
+        return this.vnicKey;
     }
 
     public void setVnicKey(String vnicKey) {
@@ -44,7 +42,7 @@ public class DvsVnicAllocatedResource extends DynamicData {
     }
 
     public long getReservation() {
-        return reservation;
+        return this.reservation;
     }
 
     public void setReservation(long reservation) {

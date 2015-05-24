@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class VMwareDvsIpfixCapability extends DynamicData {
     public Boolean ipfixSupported;
-
     public Boolean ipv6ForIpfixSupported;
-
     public Boolean observationDomainIdSupported;
 
     public Boolean getIpfixSupported() {
-        return ipfixSupported;
+        return this.ipfixSupported;
     }
 
     public void setIpfixSupported(Boolean ipfixSupported) {
@@ -36,7 +34,7 @@ public class VMwareDvsIpfixCapability extends DynamicData {
     }
 
     public Boolean getIpv6ForIpfixSupported() {
-        return ipv6ForIpfixSupported;
+        return this.ipv6ForIpfixSupported;
     }
 
     public void setIpv6ForIpfixSupported(Boolean ipv6ForIpfixSupported) {
@@ -44,7 +42,7 @@ public class VMwareDvsIpfixCapability extends DynamicData {
     }
 
     public Boolean getObservationDomainIdSupported() {
-        return observationDomainIdSupported;
+        return this.observationDomainIdSupported;
     }
 
     public void setObservationDomainIdSupported(Boolean observationDomainIdSupported) {

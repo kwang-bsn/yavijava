@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,17 +22,13 @@ package com.vmware.vim25;
 
 public class HostVvolVolumeSpecification extends DynamicData {
     public long maxSizeInMB;
-
     public String volumeName;
-
     public VimVasaProviderInfo[] vasaProviderInfo;
-
     public VASAStorageArray[] storageArray;
-
     public String uuid;
 
     public long getMaxSizeInMB() {
-        return maxSizeInMB;
+        return this.maxSizeInMB;
     }
 
     public void setMaxSizeInMB(long maxSizeInMB) {
@@ -40,7 +36,7 @@ public class HostVvolVolumeSpecification extends DynamicData {
     }
 
     public String getVolumeName() {
-        return volumeName;
+        return this.volumeName;
     }
 
     public void setVolumeName(String volumeName) {
@@ -48,7 +44,7 @@ public class HostVvolVolumeSpecification extends DynamicData {
     }
 
     public VimVasaProviderInfo[] getVasaProviderInfo() {
-        return vasaProviderInfo;
+        return this.vasaProviderInfo;
     }
 
     public void setVasaProviderInfo(VimVasaProviderInfo[] vasaProviderInfo) {
@@ -56,7 +52,7 @@ public class HostVvolVolumeSpecification extends DynamicData {
     }
 
     public VASAStorageArray[] getStorageArray() {
-        return storageArray;
+        return this.storageArray;
     }
 
     public void setStorageArray(VASAStorageArray[] storageArray) {
@@ -64,7 +60,7 @@ public class HostVvolVolumeSpecification extends DynamicData {
     }
 
     public String getUuid() {
-        return uuid;
+        return this.uuid;
     }
 
     public void setUuid(String uuid) {

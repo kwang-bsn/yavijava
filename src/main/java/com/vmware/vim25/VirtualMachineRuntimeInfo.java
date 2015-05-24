@@ -1,42 +1,27 @@
-/*================================================================================
-Copyright (c) 2013 Steve Jin. All Rights Reserved.
-
-Redistribution and use in source and binary forms, with or without modification, 
-are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, 
-this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice, 
-this list of conditions and the following disclaimer in the documentation 
-and/or other materials provided with the distribution.
-
-* Neither the name of VMware, Inc. nor the names of its contributors may be used
-to endorse or promote products derived from this software without specific prior 
-written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
-IN NO EVENT SHALL VMWARE, INC. OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGE.
-================================================================================*/
-
 package com.vmware.vim25;
 
 import java.util.Calendar;
 
 /**
- * @author Steve Jin (http://www.doublecloud.org)
- * @version 5.1
+ * Created by Michael Rice on Sun May 24 07:03:52 CDT 2015
+ * <p/>
+ * Copyright 2015 Michael Rice
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @since 6.0
  */
 
-@SuppressWarnings("all")
 public class VirtualMachineRuntimeInfo extends DynamicData {
     public VirtualMachineDeviceRuntimeInfo[] device;
     public ManagedObjectReference host;
@@ -47,9 +32,9 @@ public class VirtualMachineRuntimeInfo extends DynamicData {
     public boolean toolsInstallerMounted;
     public Calendar suspendTime;
     public Calendar bootTime;
-    public Long suspendInterval;
+    public long suspendInterval;
     public VirtualMachineQuestionInfo question;
-    public Long memoryOverhead;
+    public long memoryOverhead;
     public Integer maxCpuUsage;
     public Integer maxMemoryUsage;
     public int numMksConnections;
@@ -62,205 +47,233 @@ public class VirtualMachineRuntimeInfo extends DynamicData {
     public VirtualMachineFeatureRequirement[] offlineFeatureRequirement;
     public VirtualMachineFeatureRequirement[] featureRequirement;
     public HostFeatureMask[] featureMask;
-    public Long vFlashCacheAllocation;
+    public long vFlashCacheAllocation;
+    public Boolean paused;
+    public Boolean snapshotInBackground;
+    public Boolean quiescedForkParent;
 
     public VirtualMachineDeviceRuntimeInfo[] getDevice() {
         return this.device;
-    }
-
-    public ManagedObjectReference getHost() {
-        return this.host;
-    }
-
-    public VirtualMachineConnectionState getConnectionState() {
-        return this.connectionState;
-    }
-
-    public VirtualMachinePowerState getPowerState() {
-        return this.powerState;
-    }
-
-    public VirtualMachineFaultToleranceState getFaultToleranceState() {
-        return this.faultToleranceState;
-    }
-
-    public VirtualMachineRuntimeInfoDasProtectionState getDasVmProtection() {
-        return this.dasVmProtection;
-    }
-
-    public boolean isToolsInstallerMounted() {
-        return this.toolsInstallerMounted;
-    }
-
-    public Calendar getSuspendTime() {
-        return this.suspendTime;
-    }
-
-    public Calendar getBootTime() {
-        return this.bootTime;
-    }
-
-    public Long getSuspendInterval() {
-        return this.suspendInterval;
-    }
-
-    public VirtualMachineQuestionInfo getQuestion() {
-        return this.question;
-    }
-
-    public Long getMemoryOverhead() {
-        return this.memoryOverhead;
-    }
-
-    public Integer getMaxCpuUsage() {
-        return this.maxCpuUsage;
-    }
-
-    public Integer getMaxMemoryUsage() {
-        return this.maxMemoryUsage;
-    }
-
-    public int getNumMksConnections() {
-        return this.numMksConnections;
-    }
-
-    public VirtualMachineRecordReplayState getRecordReplayState() {
-        return this.recordReplayState;
-    }
-
-    public Boolean getCleanPowerOff() {
-        return this.cleanPowerOff;
-    }
-
-    public String getNeedSecondaryReason() {
-        return this.needSecondaryReason;
-    }
-
-    public Boolean getOnlineStandby() {
-        return this.onlineStandby;
-    }
-
-    public String getMinRequiredEVCModeKey() {
-        return this.minRequiredEVCModeKey;
-    }
-
-    public Boolean getConsolidationNeeded() {
-        return this.consolidationNeeded;
-    }
-
-    public VirtualMachineFeatureRequirement[] getOfflineFeatureRequirement() {
-        return this.offlineFeatureRequirement;
-    }
-
-    public VirtualMachineFeatureRequirement[] getFeatureRequirement() {
-        return this.featureRequirement;
-    }
-
-    public HostFeatureMask[] getFeatureMask() {
-        return this.featureMask;
-    }
-
-    public Long getVFlashCacheAllocation() {
-        return this.vFlashCacheAllocation;
     }
 
     public void setDevice(VirtualMachineDeviceRuntimeInfo[] device) {
         this.device = device;
     }
 
+    public ManagedObjectReference getHost() {
+        return this.host;
+    }
+
     public void setHost(ManagedObjectReference host) {
         this.host = host;
+    }
+
+    public VirtualMachineConnectionState getConnectionState() {
+        return this.connectionState;
     }
 
     public void setConnectionState(VirtualMachineConnectionState connectionState) {
         this.connectionState = connectionState;
     }
 
+    public VirtualMachinePowerState getPowerState() {
+        return this.powerState;
+    }
+
     public void setPowerState(VirtualMachinePowerState powerState) {
         this.powerState = powerState;
+    }
+
+    public VirtualMachineFaultToleranceState getFaultToleranceState() {
+        return this.faultToleranceState;
     }
 
     public void setFaultToleranceState(VirtualMachineFaultToleranceState faultToleranceState) {
         this.faultToleranceState = faultToleranceState;
     }
 
+    public VirtualMachineRuntimeInfoDasProtectionState getDasVmProtection() {
+        return this.dasVmProtection;
+    }
+
     public void setDasVmProtection(VirtualMachineRuntimeInfoDasProtectionState dasVmProtection) {
         this.dasVmProtection = dasVmProtection;
+    }
+
+    public boolean getToolsInstallerMounted() {
+        return this.toolsInstallerMounted;
     }
 
     public void setToolsInstallerMounted(boolean toolsInstallerMounted) {
         this.toolsInstallerMounted = toolsInstallerMounted;
     }
 
+    public Calendar getSuspendTime() {
+        return this.suspendTime;
+    }
+
     public void setSuspendTime(Calendar suspendTime) {
         this.suspendTime = suspendTime;
+    }
+
+    public Calendar getBootTime() {
+        return this.bootTime;
     }
 
     public void setBootTime(Calendar bootTime) {
         this.bootTime = bootTime;
     }
 
-    public void setSuspendInterval(Long suspendInterval) {
+    public long getSuspendInterval() {
+        return this.suspendInterval;
+    }
+
+    public void setSuspendInterval(long suspendInterval) {
         this.suspendInterval = suspendInterval;
+    }
+
+    public VirtualMachineQuestionInfo getQuestion() {
+        return this.question;
     }
 
     public void setQuestion(VirtualMachineQuestionInfo question) {
         this.question = question;
     }
 
-    public void setMemoryOverhead(Long memoryOverhead) {
+    public long getMemoryOverhead() {
+        return this.memoryOverhead;
+    }
+
+    public void setMemoryOverhead(long memoryOverhead) {
         this.memoryOverhead = memoryOverhead;
+    }
+
+    public Integer getMaxCpuUsage() {
+        return this.maxCpuUsage;
     }
 
     public void setMaxCpuUsage(Integer maxCpuUsage) {
         this.maxCpuUsage = maxCpuUsage;
     }
 
+    public Integer getMaxMemoryUsage() {
+        return this.maxMemoryUsage;
+    }
+
     public void setMaxMemoryUsage(Integer maxMemoryUsage) {
         this.maxMemoryUsage = maxMemoryUsage;
+    }
+
+    public int getNumMksConnections() {
+        return this.numMksConnections;
     }
 
     public void setNumMksConnections(int numMksConnections) {
         this.numMksConnections = numMksConnections;
     }
 
+    public VirtualMachineRecordReplayState getRecordReplayState() {
+        return this.recordReplayState;
+    }
+
     public void setRecordReplayState(VirtualMachineRecordReplayState recordReplayState) {
         this.recordReplayState = recordReplayState;
+    }
+
+    public Boolean getCleanPowerOff() {
+        return this.cleanPowerOff;
     }
 
     public void setCleanPowerOff(Boolean cleanPowerOff) {
         this.cleanPowerOff = cleanPowerOff;
     }
 
+    public String getNeedSecondaryReason() {
+        return this.needSecondaryReason;
+    }
+
     public void setNeedSecondaryReason(String needSecondaryReason) {
         this.needSecondaryReason = needSecondaryReason;
+    }
+
+    public Boolean getOnlineStandby() {
+        return this.onlineStandby;
     }
 
     public void setOnlineStandby(Boolean onlineStandby) {
         this.onlineStandby = onlineStandby;
     }
 
+    public String getMinRequiredEVCModeKey() {
+        return this.minRequiredEVCModeKey;
+    }
+
     public void setMinRequiredEVCModeKey(String minRequiredEVCModeKey) {
         this.minRequiredEVCModeKey = minRequiredEVCModeKey;
+    }
+
+    public Boolean getConsolidationNeeded() {
+        return this.consolidationNeeded;
     }
 
     public void setConsolidationNeeded(Boolean consolidationNeeded) {
         this.consolidationNeeded = consolidationNeeded;
     }
 
+    public VirtualMachineFeatureRequirement[] getOfflineFeatureRequirement() {
+        return this.offlineFeatureRequirement;
+    }
+
     public void setOfflineFeatureRequirement(VirtualMachineFeatureRequirement[] offlineFeatureRequirement) {
         this.offlineFeatureRequirement = offlineFeatureRequirement;
+    }
+
+    public VirtualMachineFeatureRequirement[] getFeatureRequirement() {
+        return this.featureRequirement;
     }
 
     public void setFeatureRequirement(VirtualMachineFeatureRequirement[] featureRequirement) {
         this.featureRequirement = featureRequirement;
     }
 
+    public HostFeatureMask[] getFeatureMask() {
+        return this.featureMask;
+    }
+
     public void setFeatureMask(HostFeatureMask[] featureMask) {
         this.featureMask = featureMask;
     }
 
-    public void setVFlashCacheAllocation(Long vFlashCacheAllocation) {
+    public long getVFlashCacheAllocation() {
+        return this.vFlashCacheAllocation;
+    }
+
+    public void setVFlashCacheAllocation(long vFlashCacheAllocation) {
         this.vFlashCacheAllocation = vFlashCacheAllocation;
     }
+
+    public Boolean getPaused() {
+        return this.paused;
+    }
+
+    public void setPaused(Boolean paused) {
+        this.paused = paused;
+    }
+
+    public Boolean getSnapshotInBackground() {
+        return this.snapshotInBackground;
+    }
+
+    public void setSnapshotInBackground(Boolean snapshotInBackground) {
+        this.snapshotInBackground = snapshotInBackground;
+    }
+
+    public Boolean getQuiescedForkParent() {
+        return this.quiescedForkParent;
+    }
+
+    public void setQuiescedForkParent(Boolean quiescedForkParent) {
+        this.quiescedForkParent = quiescedForkParent;
+    }
+
 }

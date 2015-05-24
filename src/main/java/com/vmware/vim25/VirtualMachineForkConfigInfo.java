@@ -1,7 +1,7 @@
 package com.vmware.vim25;
 
 /**
- * Created by Michael Rice on Wed May 20 23:39:36 CDT 2015
+ * Created by Michael Rice on Sun May 24 07:03:51 CDT 2015
  * <p/>
  * Copyright 2015 Michael Rice
  * <p/>
@@ -22,13 +22,11 @@ package com.vmware.vim25;
 
 public class VirtualMachineForkConfigInfo extends DynamicData {
     public Boolean parentEnabled;
-
     public String childForkGroupId;
-
     public String childType;
 
     public Boolean getParentEnabled() {
-        return parentEnabled;
+        return this.parentEnabled;
     }
 
     public void setParentEnabled(Boolean parentEnabled) {
@@ -36,7 +34,7 @@ public class VirtualMachineForkConfigInfo extends DynamicData {
     }
 
     public String getChildForkGroupId() {
-        return childForkGroupId;
+        return this.childForkGroupId;
     }
 
     public void setChildForkGroupId(String childForkGroupId) {
@@ -44,7 +42,7 @@ public class VirtualMachineForkConfigInfo extends DynamicData {
     }
 
     public String getChildType() {
-        return childType;
+        return this.childType;
     }
 
     public void setChildType(String childType) {
